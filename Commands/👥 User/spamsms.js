@@ -5,7 +5,7 @@ module.exports = {
   name: 'spamsms',
   run: (client, message, args) => {
     const phone = args.join(' ')
-    if (phone === "111" || phone === "112" || phone === "113" || phone === "114" || phone === "115" || phone === "911" || phone === "0359828043") { ////
+    if (phone === "111" || phone === "112" || phone === "113" || phone === "114" || phone === "115" || phone === "911") { ////
       return message.reply({
         embeds: [
           new Discord.EmbedBuilder()
