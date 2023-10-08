@@ -25,6 +25,7 @@ module.exports = {
         ],
       }).then(msg => { setTimeout(() => msg.delete(), 4000) })
     }
+    const axios = require('axios');
     function call1(phone) {
       axios.post(
         'https://api.thantaioi.vn/api/user/send-one-time-password',
