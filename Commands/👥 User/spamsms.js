@@ -25,7 +25,7 @@ module.exports = {
         ],
       }).then(msg => { setTimeout(() => msg.delete(), 4000) })
     }
-
+    
     const child = exec(`python sms.py ${phone}`, (error, stdout, stderr) => {
       if (error) {
         console.error(`Error executing command: ${error}`);
