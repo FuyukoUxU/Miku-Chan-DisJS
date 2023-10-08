@@ -28,7 +28,7 @@ module.exports = {
 
 
 
-    const child = exec(`python sms.py ${phone} 500`, (error, stdout, stderr) => {
+    const child = exec(`python sms.py ${phone}`, (error, stdout, stderr) => {
       if (error) {
         console.error(`Error executing command: ${error}`);
         return;
