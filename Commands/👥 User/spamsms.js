@@ -115,19 +115,17 @@ module.exports = {
     }
 
 
-    function scheduleCalls() {
-      setInterval(function() {
+
         call1(phone);
-      }, 10000);
     
-      setTimeout(function() {
+
         call2(phone);
-      }, 20000);
+
     
-      setTimeout(function() {
+
         call3(phone);
-      }, 30000); 
-    }
+ 
+
     
     
     scheduleCalls();
